@@ -1,0 +1,20 @@
+@mixin texto ($color, $font-size){
+    color: $color;
+    font-size: $font-size;
+}
+
+$color-principal: black;
+$color-secundario: white;
+$color-terciario: gray;
+
+.section__shows {
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    .descripcion{
+        @include texto($color-principal, 20px)
+    }
+}
+
+
+

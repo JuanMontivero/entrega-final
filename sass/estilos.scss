@@ -1,0 +1,243 @@
+@import "operaciones";
+@import "generales";
+@import "navbar";
+@import "index";
+@import "footer";
+@import "instrumentos";
+
+//**FOTOS DEL CARRUSEL**//
+
+.slider {
+    width: 100%;
+    height: 500px;
+    padding: 25px;
+}
+
+.img__slider{
+    height: 600px;
+}
+
+//**INTEGRANTES**//
+
+.titulo__integrantes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.titulo__integrantes h2{
+    color: $color-principal;
+    font-family: 'Roboto', sans-serif;
+    border-bottom: double 10px $color-principal;
+    font-size: 80px;
+} 
+
+.ul__integrantes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+    padding: 15px;
+    border: solid 2px $color-principal;
+}
+
+.ul__integrantes li {
+    list-style-type: none; 
+}
+
+.img__nav {
+    height: 120px;
+    width: 120px;
+}
+
+.section__integrantes {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    justify-content: space-around;
+    gap: 50px;
+}
+
+.integrantes__img {
+    width: 600px;
+    height: 500px;
+}
+
+.div__section__integrantes {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 50px;
+    padding: 15px;
+    border: double 10px $color-principal;
+    transition: 1s;
+}
+
+.div__section__integrantes:hover{
+    transform: scale(1.1);
+}
+
+.text__integrantes {
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 3px;
+    padding: 10px;
+    color: $color-terciario;
+}
+
+.h {
+    border-bottom: double 5px $color-principal;
+}
+
+.p {
+    color: $color-terciario;
+    font-size: 20px;
+}
+
+.div__section__integrantes a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    color: $color-terciario;
+}
+
+.div__section__integrantes a:hover {
+    color: $color-principal;
+} 
+
+//**ESTILOS PAG HISTORIA**//
+
+.calendario{
+    justify-content: center;
+}
+
+.byn{
+    border-radius: 50px;
+    border-style: double;
+}
+
+//**MEDIA QUERIS**//
+
+@media (max-width:1600px) {
+    
+    .section__historia {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows:auto auto auto auto ;
+    }
+    .img__historia{
+        width: 800px;
+        height: 500px;
+    }
+    .section__integrantes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .titulo__section {
+        font-size: 50px;
+        text-align: center;
+        
+    }
+
+    .section__grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .div__nosotros {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .iframe__section {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+}
+
+@media (max-width:1200px){
+
+
+    .section__historia {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img__historia {
+        width: 800px;
+        height: 500px;
+    }
+
+    
+    .ul {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto;
+        justify-content: center;
+        
+    }
+
+    .banner img {
+        width: 100%;
+        height: 350px;
+    }
+
+    .section__img {
+        height: 350px;
+        width: 350px;
+    }
+
+    .iframe {
+        margin: 25px;
+    }
+
+    .ul__integrantes {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        justify-content: space-around;
+        gap: 15px;
+        
+    }
+}
+
+@media (max-width:900px) {
+
+    .section__historia {
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: space-around;
+
+    }
+
+    .div__section__integrantes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .imghistoria {
+        width: 425px;
+        height: 400px;
+    }
+    .integrantes__img {
+        width: 425px;
+        height: 350px;
+    }
+    .iframe {
+        height: 500px;
+        width: 250px;
+    }
+    .iframe__section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }  
+}

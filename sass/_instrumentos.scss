@@ -1,0 +1,54 @@
+.button__style {
+    cursor: pointer;
+    width: 100px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    
+    &:hover {
+        background-color: $color-principal;
+        color: $color-secundario;
+    }
+    
+}
+
+.img {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    border-radius: 5px;
+    box-shadow: 19px 19px 39px -13px $color-principal; 
+    
+    &__dactilofono{
+        background-image: url(../img/dactilofono.png);
+    }
+    &__latin{
+        background-image: url(../img/latin.png);
+    }
+    &__cellato{
+        background-image: url(../img/cellato.png);
+    }
+    &__mandocleta{
+        background-image: url(../img/mandocleta.png);
+    }
+    &__lirodoro{
+        background-image: url(../img/lirodoro.png);
+    }
+    &__nomeolbidet{
+        background-image: url(../img/nomeolbidet.png);
+    }
+}
+
+.style__box{
+    height: inherit;
+}
+
+.animacion__instrumentos {
+    transition-duration: 0.3s;
+    transition-property: transform;
+    
+    &:hover{
+        transform: scale(1.05)
+    }
+}
